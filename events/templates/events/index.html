@@ -1,0 +1,80 @@
+{% extends 'events/base.html' %}
+{% block content %}
+    <main role="main">
+
+        <section class="jumbotron text-center hero">
+            <div class="container">
+                <h1 class="jumbotron-heading" style="color: #FFF">Events in Noida</h1>
+                <p class="lead" style="color: rgba(255, 255, 255, 0.739);">You live the moments. We make them memorable.</p>
+                <form class="form-inline" id="locationSearch" action="{% url 'search' %}">
+                    {% csrf_token %}
+                    <div class="ui-widget container cen">
+                        <input class="form-control" id="location" name="location" type="text" placeholder="Type Region or City" style="margin-right: 10px;">
+                    </div>
+                    <button class="btn btn-outline-success cen" id="searchBtn"type="submit" style="margin-right: auto;">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="https://cdn-az.allevents.in/banners/c12a5b269b2f06ede54d62400b74fb93-rimg-w300-h274-gmir.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Noida 10K - 2nd Edition</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">JBM GLOBAL SCHOOL, A-11, Sector-132, Noida, India 201301, Noida, India</h6>
+                                <p class="card-text">
+                                    <small class="text-muted">JUL 08</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="https://cdn-az.allevents.in/banners/c12a5b269b2f06ede54d62400b74fb93-rimg-w300-h274-gmir.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Noida 10K - 2nd Edition</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">JBM GLOBAL SCHOOL, A-11, Sector-132, Noida, India 201301, Noida, India</h6>
+                                <p class="card-text">
+                                    <small class="text-muted">JUL 08</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="https://cdn-az.allevents.in/banners/c12a5b269b2f06ede54d62400b74fb93-rimg-w300-h274-gmir.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Noida 10K - 2nd Edition</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">JBM GLOBAL SCHOOL, A-11, Sector-132, Noida, India 201301, Noida, India</h6>
+                                <p class="card-text">
+                                    <small class="text-muted">JUL 08</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="https://cdn-az.allevents.in/banners/c12a5b269b2f06ede54d62400b74fb93-rimg-w300-h274-gmir.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Noida 10K - 2nd Edition</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">JBM GLOBAL SCHOOL, A-11, Sector-132, Noida, India 201301, Noida, India</h6>
+                                <p class="card-text">
+                                    <small class="text-muted">JUL 08</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+{% endblock %}
