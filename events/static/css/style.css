@@ -28,8 +28,12 @@
     max-width: 40rem;
 }
 
+html,
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f8f9fa!important;
 }
 
 footer {
@@ -41,6 +45,10 @@ footer p {
     margin-bottom: .25rem;
 }
 
+#container {
+    min-height: calc(100% - 7.75rem);
+}
+
 .box-shadow {
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
@@ -50,7 +58,7 @@ footer p {
 }
 
 .hero {
-    background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url(https://cdn-az.allevents.in/banners/5ed85c3ae7a78c4a08e4fe310abb0104);
+    background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url(https://cdn-az.allevents.in/banners/5ed85c3ae7a78c4a08e4fe310abb0104);
     background-size: cover;
     background-position: 50% 50%;
 }
