@@ -1,0 +1,33 @@
+{% extends 'accounts/base.html' %} {% block content %}
+<div class="container">
+    {% if error %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{error}}
+                <button type="button" style="outline: none;" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <div class="col-md-5">
+        <div class="inner-box">
+            <form method="POST" action="">
+                {% csrf_token %}
+                <h1 class="h3 mb-3 font-weight-normal text-center">Login</h1>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" placeholder="Username" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" class="form-control" name="password" placeholder="Password" required="">
+                </div>
+                <button class="btn btn-lg bg-dark btn-block" type="submit">LOGIN</button>
+                <br>
+                <a class="text-center" href="{% url 'signup' %}" style="display: block; text-decoration: none;">Create an account</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

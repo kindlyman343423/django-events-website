@@ -6,8 +6,7 @@
         <div class="container">
             <h1 class="jumbotron-heading" style="color: #FFF">Events in {{location}}</h1>
             <p class="lead" style="color: rgba(255, 255, 255, 0.739);">You live the moments. We make them memorable.</p>
-            <form class="form-inline" id="locationSearch" action="" method="POST">
-                {% csrf_token %}
+            <form class="form-inline" id="locationSearch" action="" method="GET">
                 <div class="ui-widget cen" style="width: 100%;padding-right: 15px;padding-left: 15px;">
                     <input class="form-control" id="location" name="location" type="text" placeholder="Type Region or City" required>
                 </div>
