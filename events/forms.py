@@ -13,7 +13,6 @@ class EventForm(forms.ModelForm):
         fields = ('name', 'description', 'image', 'time', 'venue', 'city')
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),
-            'description': forms.Textarea(attrs={'class': 'form-control'}),
             'image': forms.FileInput(attrs={'class': 'form-control-file'}),
             'venue': forms.TextInput(attrs={'class': 'form-control'}),
             'city': forms.Select(attrs={'class': 'form-control'}),

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'events.apps.EventsConfig',
     'accounts.apps.AccountsConfig',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
