@@ -4,11 +4,11 @@
 
     <section class="jumbotron text-center hero">
         <div class="container">
-            <h1 class="jumbotron-heading" style="color: #FFF">Events in {{location}}</h1>
+            <h1 class="jumbotron-heading" style="color: #FFF">Events in {{city}}</h1>
             <p class="lead" style="color: rgba(255, 255, 255, 0.739);">You live the moments. We make them memorable.</p>
-            <form class="form-inline" id="locationSearch" action="" method="GET">
+            <form class="form-inline" id="citySearch" action="" method="GET">
                 <div class="ui-widget cen" style="width: 100%;padding-right: 15px;padding-left: 15px;">
-                    <input class="form-control" id="location" name="location" type="text" placeholder="Type Region or City" required>
+                    <input class="form-control" id="city" name="city" type="text" placeholder="Type Region or City" required>
                 </div>
                 <button class="btn btn-outline-success cen" id="searchBtn" type="submit">Search</button>
             </form>
@@ -38,7 +38,7 @@
             {% if events|length == 0 %}
             <div class="row" style="height: 100%;">
                 <div class="col-md-12">
-                    <h1 class="text-center lead">Sorry! No events for {{location}}</h1>
+                    <h1 class="text-center lead">Sorry! No events for {{city}}</h1>
                 </div>
             </div>
             {% endif %}

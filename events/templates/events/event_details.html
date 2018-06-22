@@ -2,19 +2,19 @@
 <main role="main">
     <div class="container" style="margin-top: 20px;">
         <div class="row">
-                <div class="col-md-4">
-                    <img src="{{event.image.url}}" alt="event-image" style="height: 200px; width: 200px;">
-                </div>
-                <div class="col-md-8">
-                    <h3>{{event.title}}</h3>
-                    <br>
-                    <p>Time: {{event.time}}</p>
-                    <p>Venue: {{event.venue}}</p>
-                    <p>Created By: {{event.author}}</p>
-                </div>
+            <div class="col-md-4">
+                <img src="{{event.image.url}}" alt="event-image" style="height: 200px; width: 200px;">
+            </div>
+            <div class="col-md-8">
+                <h3>{{event.name}}</h3>
+                <br>
+                <p>Time: {{event.time}}</p>
+                <p>Venue: {{event.venue}}</p>
+                <p>Created By: {{event.author}}</p>
+            </div>
         </div>
         <hr class="my-4">
-        <h5>{{event.title}}</h5>
+        <h5>{{event.name}}</h5>
         <br>
         <p style="white-space: pre-wrap;">{{event.description}}</p>
     </div>

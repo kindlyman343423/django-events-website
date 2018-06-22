@@ -1,0 +1,14 @@
+{% extends 'events/base.html' %} {% block content %}
+<main role="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>New Event</h1>
+                <form method="POST" enctype="multipart/form-data">{% csrf_token %} {{ form.as_p }}
+                    <button type="submit" class="save btn btn-default">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
