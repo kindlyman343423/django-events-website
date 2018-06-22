@@ -14,8 +14,14 @@ def index(request):
         events = Event.objects.filter(city__city=city)
 
     else:
-        events = Event.objects.filter(city__city='Noida')
-        city = events.get(pk=1).city
+        try:
+            events = Event.objects.filter(city__city='Noida')
+            try:
+                city = City.objects.get(city='Noida')
+            except City.DoesNotExist:
+                city = 'City'
+        except Event.DoesNotExist:
+            events = None
 
     return render(request, 'events/index.html', {'events': events,
                                                  'city': city})
