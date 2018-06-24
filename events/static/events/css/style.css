@@ -70,3 +70,22 @@ footer p {
 #searchBtn {
     margin-top: 20px;
 }
+
+#event-details {
+    margin: 30px auto;
+    padding: 30px;
+}
+
+#event-details .row {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+#event-details a {
+    word-wrap: break-word;
+}
+
+#mceu_31 {
+    display: none !important;
+}
