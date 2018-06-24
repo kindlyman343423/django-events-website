@@ -1,6 +1,6 @@
 {% extends 'events/base.html' %} {% block content %}
 <main role="main">
-    <div class="container" style="margin: 30px auto; padding: 30px; background: white;">
+    <div class="container" id='event-details'>
         <div class="row">
             <div class="col-md-4">
                 <img src="{{event.image.url}}" alt="event-image" style="height: 200px; width: 200px;">
@@ -8,15 +8,26 @@
             <div class="col-md-8">
                 <h3 style="font-weight: 700;">{{event.name}}</h3>
                 <br>
-                <p><strong>Time:</strong> {{event.time}}</p>
-                <p><strong>Venue:</strong> {{event.venue}}</p>
-                <p><strong>Created By:</strong> <span style="color: green;">{{event.author}}</span></p>
+                <p>
+                    <strong>Time:</strong> {{event.time}}</p>
+                <p>
+                    <strong>Venue:</strong> {{event.venue}}</p>
+                <p>
+                    <strong>Created By:</strong>
+                    <span style="color: green;">{{event.author}}</span>
+                </p>
             </div>
         </div>
-        <hr class="my-4">
-        <h5 style="font-weight: 600;">{{event.name}}</h5>
-        <br>
-        {{event.description|safe}}
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-12">
+                <h5 style="font-weight: 600;">{{event.name}}</h5>
+                <br> {{event.description|safe}}
+                <br>
+                <iframe id="fbshare" src=""
+                    width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+                    allow="encrypted-media"></iframe>
+            </div>
+        </div>
     </div>
 </main>
 {% endblock %}
