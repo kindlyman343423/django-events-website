@@ -23,11 +23,14 @@
                 <h5 style="font-weight: 600;">{{event.name}}</h5>
                 <br> {{event.description|safe}}
                 <br>
-                <!-- Your share button code -->
-                <div class="fb-share-button" data-href="{{ request.path }}" data-layout="button" data-size="large"
-                    data-mobile-iframe="true">
-                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
-                        class="fb-xfbml-parse-ignore">Share</a>
+                <div id="social-buttons">
+                    <div class="fb-share-button" data-href="{{ request.path }}" data-layout="button" data-size="large" data-mobile-iframe="true">
+                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                            class="fb-xfbml-parse-ignore">Share</a>
+                    </div>
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="{{event.name}}"
+                        data-show-count="false">Tweet</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>
         </div>

@@ -89,3 +89,7 @@ footer p {
 #mceu_31 {
     display: none !important;
 }
+
+#social-buttons {
+    display: flex;
+}
